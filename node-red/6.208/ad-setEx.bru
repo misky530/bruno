@@ -1,0 +1,21 @@
+meta {
+  name: ad-setEx
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://192.168.0.110:1880/mtie/ai/ad/setEx
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "obj": 0 // 1 (有) | 0 (无)
+  }
+}
+
+settings {
+  encodeUrl: true
+}

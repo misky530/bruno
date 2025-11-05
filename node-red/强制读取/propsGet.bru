@@ -1,0 +1,19 @@
+meta {
+  name: propsGet
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:1881/propsGet/:nodeId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  nodeId: dac0aecb61e6101b
+}
+
+settings {
+  encodeUrl: true
+}

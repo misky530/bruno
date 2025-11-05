@@ -1,0 +1,24 @@
+meta {
+  name: gateway-getPropsLatestValue
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:1880/dra/TENANT_ID_245/PROJECT_ID_245/getPropsLatestValue
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ids": [
+          "7244173985318322176",
+          "7244173985368653824"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

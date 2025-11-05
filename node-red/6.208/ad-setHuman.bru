@@ -1,0 +1,21 @@
+meta {
+  name: ad-setHuman
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://192.168.0.110:1880/mtie/ai/ad/setHuman
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "human":  0// 1 (有) | 0 (无)
+  }
+}
+
+settings {
+  encodeUrl: true
+}

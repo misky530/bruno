@@ -1,0 +1,22 @@
+meta {
+  name: gateway-getConfig-download
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:1880/da/1824262045898514432/1824272950925336576/abc/getConfig
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "7244173985318322176": 22.1,
+      "7244173985368653824": 32.4
+  }
+}
+
+settings {
+  encodeUrl: true
+}

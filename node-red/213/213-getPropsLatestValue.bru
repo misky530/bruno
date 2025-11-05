@@ -1,0 +1,24 @@
+meta {
+  name: 213-getPropsLatestValue
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://192.168.5.213:16888/dra/TENANT_ID_245/PROJECT_ID_245/getPropsLatestValue
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ids": [
+          "7244142137275990016",
+          "7244142137326321664"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,21 @@
+meta {
+  name: ai-info
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://127.0.0.1:1880/ai/info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "info": "abc123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

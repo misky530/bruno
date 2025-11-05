@@ -1,0 +1,29 @@
+meta {
+  name: http://192.168.1.200:1880/api/energy
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://127.0.0.1:1880/api/energy
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"ids":[ "7319170164761968640"]}
+}
+
+settings {
+  encodeUrl: true
+}
+
+docs {
+  Generated from cURL: curl --location 'http://192.168.1.200:1880/api/energy' \
+  --header 'Content-Type: application/json' \
+  --data '{"ids": "7319170164761968640"}'
+}

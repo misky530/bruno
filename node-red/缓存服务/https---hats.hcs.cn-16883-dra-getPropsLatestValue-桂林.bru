@@ -1,0 +1,31 @@
+meta {
+  name: https://hats.hcs.cn:16883/dra/getPropsLatestValue-桂林
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://hats.hcs.cn:16883/dra/getPropsLatestValue
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  tenant-id: 1688720738934202368
+}
+
+body:json {
+  {"propIds":"1780785486927896576,1780785487154388992"}
+}
+
+settings {
+  encodeUrl: true
+}
+
+docs {
+  Generated from cURL: curl --location 'https://hats.hcs.cn:16883/dra/getPropsLatestValue' \
+  --header 'Content-Type: application/json' \
+  --header 'tenant-id: 1922534990290231296' \
+  --data '{"propIds":"7327982420299759616,7327982420308148224"}'
+}

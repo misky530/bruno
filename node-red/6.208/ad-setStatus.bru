@@ -1,0 +1,21 @@
+meta {
+  name: ad-setStatus
+  type: http
+  seq: 15
+}
+
+put {
+  url: http://192.168.6.208:1880/mtie/ai/ad/setStatus
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "abnormal": 1 // 1 (有) | 0 (无)
+  }
+}
+
+settings {
+  encodeUrl: true
+}

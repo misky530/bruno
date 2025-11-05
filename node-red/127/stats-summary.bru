@@ -1,0 +1,15 @@
+meta {
+  name: stats-summary
+  type: http
+  seq: 20
+}
+
+get {
+  url: http://127.0.0.1:1880/api/stats/summary
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

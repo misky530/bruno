@@ -1,0 +1,21 @@
+meta {
+  name: gateway-setPropValue
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://127.0.0.1:1880/dra/TENANT_ID_245/PROJECT_ID_245/setPropValue/7244173985368653824
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "value": 36.2
+  }
+}
+
+settings {
+  encodeUrl: true
+}

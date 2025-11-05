@@ -1,0 +1,19 @@
+meta {
+  name: gateway-getDeviceStatus
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:1880/dra/1824262045898514432/1824272950925336576/getDeviceStatus?deviceId=AF6EC78B
+  body: none
+  auth: inherit
+}
+
+params:query {
+  deviceId: AF6EC78B
+}
+
+settings {
+  encodeUrl: true
+}

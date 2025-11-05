@@ -1,0 +1,26 @@
+meta {
+  name: mtic-asr/config
+  type: http
+  seq: 19
+}
+
+post {
+  url: 192.168.0.177:6006/mtic-asr/config
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "id": "", // 设备标识id
+      "command_map": {
+          "EmergencyOn": "紧急排风开门", // 指令code与对应的语音文本
+          "EmergencyOFF": "紧急排风关门"  // 指令code与对应的语音文本
+      }
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

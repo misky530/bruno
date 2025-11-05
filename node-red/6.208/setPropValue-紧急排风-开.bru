@@ -1,0 +1,21 @@
+meta {
+  name: setPropValue-紧急排风-开
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://192.168.6.208:1880/dra/1397095337741856770/1401722937861611528/setPropValue/7263034442422566912
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "value": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

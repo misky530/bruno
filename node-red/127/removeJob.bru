@@ -1,0 +1,21 @@
+meta {
+  name: removeJob
+  type: http
+  seq: 16
+}
+
+post {
+  url: http://192.168.5.83:1880/job/removeJob
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {    
+      "name": "01-off"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

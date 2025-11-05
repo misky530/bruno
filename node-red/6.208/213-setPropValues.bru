@@ -1,0 +1,22 @@
+meta {
+  name: 213-setPropValues
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://192.168.5.213:16888/dra/TENANT_ID_245/PROJECT_ID_245/setPropValues
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "7244173985318322176": 238,
+      "7244173985368653824": 389
+  }
+}
+
+settings {
+  encodeUrl: true
+}

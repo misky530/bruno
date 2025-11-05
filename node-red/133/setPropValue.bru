@@ -1,0 +1,21 @@
+meta {
+  name: setPropValue
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://192.168.0.133:1880/dra/1473880605895815169/1867383746353831936/setPropValue/7272848665818316800
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "value": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

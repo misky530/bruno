@@ -1,0 +1,24 @@
+meta {
+  name: getPropsLatestValue
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://127.0.0.1:1880/dra/1824262045898514432/1824272950925336576/getPropsLatestValue
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "ids": [
+          "7264844222577393664",
+          "7264844222531256320"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

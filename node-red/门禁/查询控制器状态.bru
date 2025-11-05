@@ -1,0 +1,32 @@
+meta {
+  name: 查询控制器状态
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://192.168.7.186:61080/api/jsonrpc
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "method": "查询控制器状态",
+    "params": [
+      {
+        "设备序列号": 126002274
+      }
+    ],
+    "id": 1002
+  }
+}
+
+settings {
+  encodeUrl: false
+}

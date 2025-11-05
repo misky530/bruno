@@ -1,0 +1,26 @@
+meta {
+  name: addjob
+  type: http
+  seq: 15
+}
+
+post {
+  url: http://192.168.5.83:1880/job/addJob
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "payload": {
+          "propId": "7244875615101665281,7244875615101665282",
+          "setVal": 1
+      },
+      "name": "01-off-multi",
+      "expression": "0 0/1 * * * ? *"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: ad-setStatus-debug
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:1880/mtie/ai/ad/setStatusDebug
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "value": 12 ,
+      "untiId": 1,
+      "address": 5
+  }
+}
+
+settings {
+  encodeUrl: true
+}

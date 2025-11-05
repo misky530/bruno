@@ -1,0 +1,21 @@
+meta {
+  name: setPropValue
+  type: http
+  seq: 9
+}
+
+put {
+  url: http://localhost:1880/dra/1824262045898514432/1824272950925336576/setPropValue/7264844222531256320
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "value": 15
+  }
+}
+
+settings {
+  encodeUrl: true
+}

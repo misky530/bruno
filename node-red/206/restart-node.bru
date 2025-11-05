@@ -1,0 +1,19 @@
+meta {
+  name: restart-node
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://192.168.5.206:1880/restart-node
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  files: @file(/F:/caiqian/download/flows (8).json)
+}
+
+settings {
+  encodeUrl: true
+}
