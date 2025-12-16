@@ -1,0 +1,36 @@
+meta {
+  name: /cfg/backup (PUT)
+  type: http
+  seq: 26
+}
+
+put {
+  url: {{baseUrl}}/api/v1/cfg/backup
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/cfg/backup
+    method: PUT
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

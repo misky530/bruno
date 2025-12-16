@@ -1,0 +1,37 @@
+meta {
+  name: 权限查询
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://192.168.7.186:61080/api/jsonrpc
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "jsonrpc": "2.0",
+      "method": "权限查询",
+      "params": [
+          {
+              "设备序列号": 126002274,
+              "卡号": [
+                  23001
+              ]
+          }
+      ],
+      "id": 1001
+  }
+  
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

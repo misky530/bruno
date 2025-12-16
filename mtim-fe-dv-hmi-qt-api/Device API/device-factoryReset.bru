@@ -1,0 +1,36 @@
+meta {
+  name: /device/factoryReset
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/api/v1/device/factoryReset
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/device/factoryReset
+    method: POST
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

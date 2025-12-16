@@ -1,0 +1,36 @@
+meta {
+  name: /cfg/download
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{baseUrl}}/api/v1/cfg/download
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/cfg/download
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

@@ -1,0 +1,36 @@
+meta {
+  name: /hd/dataArchive (GET)
+  type: http
+  seq: 45
+}
+
+get {
+  url: {{baseUrl}}/api/v1/hd/dataArchive
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/hd/dataArchive
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

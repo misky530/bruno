@@ -1,0 +1,47 @@
+meta {
+  name: 权限添加或删除
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://192.168.7.186:61080/api/jsonrpc
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "method": "权限添加或修改",
+    "params": [
+      {
+        "设备序列号": 126002274,
+        "权限": [
+          {
+            "卡号": [
+              23001
+            ],
+            "起始日期时间": "2020-1-1 0:0:0",
+            "截止日期时间": "2099-12-31 23:59:59",
+            "1号门控制时段": 1,
+            "2号门控制时段": 1,
+            "3号门控制时段": 1,
+            "4号门控制时段": 1,
+            "用户密码": 345678
+          }
+        ]
+      }
+    ],
+    "id": 4001
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

@@ -5,11 +5,22 @@ meta {
 }
 
 post {
-  url: http://192.168.6.208:1880/dra/1397095337741856770/1401722937861611528/getPropsLatestValue
+  url: http://192.168.1.200:1880/dra/1473880605895815169/1985595807042248704/getPropsLatestValue
   body: json
   auth: inherit
 }
 
+body:json {
+  {
+      "ids": [
+          "7259124332033884160",
+          "7259124332042272768",
+        "7315203657145139200"
+      ]
+  }
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }

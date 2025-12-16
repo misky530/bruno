@@ -1,0 +1,36 @@
+meta {
+  name: /cfg/backup
+  type: http
+  seq: 25
+}
+
+post {
+  url: {{baseUrl}}/api/v1/cfg/backup
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/cfg/backup
+    method: POST
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

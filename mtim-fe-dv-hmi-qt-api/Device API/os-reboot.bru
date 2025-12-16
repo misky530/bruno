@@ -1,0 +1,36 @@
+meta {
+  name: /os/reboot
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseUrl}}/api/v1/os/reboot
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/os/reboot
+    method: POST
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

@@ -1,0 +1,36 @@
+meta {
+  name: /device/board-info
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/v1/device/board-info
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/device/board-info
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

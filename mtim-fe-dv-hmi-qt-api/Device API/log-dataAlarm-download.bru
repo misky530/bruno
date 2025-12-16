@@ -1,0 +1,36 @@
+meta {
+  name: /log/dataAlarm/download
+  type: http
+  seq: 37
+}
+
+get {
+  url: {{baseUrl}}/api/v1/log/dataAlarm/download
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/log/dataAlarm/download
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

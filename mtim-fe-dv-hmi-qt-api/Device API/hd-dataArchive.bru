@@ -1,0 +1,36 @@
+meta {
+  name: /hd/dataArchive
+  type: http
+  seq: 44
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/hd/dataArchive
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/hd/dataArchive
+    method: DELETE
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

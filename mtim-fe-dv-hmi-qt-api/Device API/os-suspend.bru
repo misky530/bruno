@@ -1,0 +1,36 @@
+meta {
+  name: /os/suspend
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{baseUrl}}/api/v1/os/suspend
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/os/suspend
+    method: POST
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

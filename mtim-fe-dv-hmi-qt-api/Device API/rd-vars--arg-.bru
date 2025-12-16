@@ -1,0 +1,36 @@
+meta {
+  name: /rd/vars/<arg>
+  type: http
+  seq: 42
+}
+
+get {
+  url: {{baseUrl}}/api/v1/rd/vars/<arg>
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/rd/vars/<arg>
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

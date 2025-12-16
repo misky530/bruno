@@ -1,0 +1,36 @@
+meta {
+  name: /device/serialNumber
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/api/v1/device/serialNumber
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/device/serialNumber
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

@@ -1,0 +1,36 @@
+meta {
+  name: /device/temperature
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/v1/device/temperature
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/device/temperature
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

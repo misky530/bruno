@@ -1,7 +1,7 @@
 meta {
-  name: 远程开门
+  name: 读取开门超级密码
   type: http
-  seq: 2
+  seq: 5
 }
 
 post {
@@ -17,15 +17,16 @@ headers {
 body:json {
   {
     "jsonrpc": "2.0",
-    "method": "远程开门",
+    "method": "扩展功能",
     "params": [
-      {
-        "设备序列号": 126002455,
-        "门号": 1
-      }
-    ],
-    "id": 1001
+        {
+         "设备序列号":126002274,
+         "功能名称": "读取开门超级密码"
+        }
+       ],
+    "id": 1005
   }
+  
 }
 
 settings {

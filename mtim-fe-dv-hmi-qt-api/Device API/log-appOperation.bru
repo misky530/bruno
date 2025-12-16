@@ -1,0 +1,36 @@
+meta {
+  name: /log/appOperation
+  type: http
+  seq: 32
+}
+
+get {
+  url: {{baseUrl}}/api/v1/log/appOperation
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/log/appOperation
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

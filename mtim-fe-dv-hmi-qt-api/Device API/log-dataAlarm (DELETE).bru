@@ -1,0 +1,36 @@
+meta {
+  name: /log/dataAlarm (DELETE)
+  type: http
+  seq: 36
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/log/dataAlarm
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/log/dataAlarm
+    method: DELETE
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
