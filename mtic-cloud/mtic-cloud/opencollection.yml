@@ -2,6 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: mtic-cloud
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: X-Access-Token
+      value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NzU2NzAyMTQsInVzZXJuYW1lIjoiY2FpcWlhbiJ9.lwWdetM6gYi2udWFkGtkjc1jhoZ1vk2p5FBVbGwKENw
 bundled: false
 extensions:
   bruno:

@@ -1,0 +1,21 @@
+info:
+  name: upload
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:7000/api/firmware/check
+  body:
+    type: multipart-form
+    data:
+      - name: categoryId
+        type: text
+        value: "1645243256944074752"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

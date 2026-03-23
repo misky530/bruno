@@ -1,0 +1,29 @@
+info:
+  name: config-save
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:7000/sys/firmware/config
+  body:
+    type: json
+    data: |-
+      {
+        "description": "test1",
+        "downloadUrl": "http://123",
+        "forceUpdate": true,
+        "hardwareVersion": "1.0.0",
+        "productCode": "",
+        "published": true,
+        "sha256": "abc123",
+        "size": 0,
+        "version": "1.0.0"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
