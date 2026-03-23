@@ -1,0 +1,42 @@
+meta {
+  name: Auto-generated endpoint for /api/v1/da/tags (PUT)
+  type: http
+  seq: 52
+}
+
+put {
+  url: {{baseUrl}}/api/v1/da/tags
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "modbusRtu.串口1.自动视窗.sczdkzzt-ksc": 1
+  }
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/da/tags
+    method: PUT
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

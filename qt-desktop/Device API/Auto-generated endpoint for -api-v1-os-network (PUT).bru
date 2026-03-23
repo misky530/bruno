@@ -1,0 +1,36 @@
+meta {
+  name: Auto-generated endpoint for /api/v1/os/network (PUT)
+  type: http
+  seq: 25
+}
+
+put {
+  url: {{baseUrl}}/api/v1/os/network
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/os/network
+    method: PUT
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

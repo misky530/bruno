@@ -1,0 +1,24 @@
+info:
+  name: login
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:7000/sys/login
+  body:
+    type: json
+    data: |-
+      {
+        "captcha": "6nhs",
+        "checkKey": "123",
+        "password": "Metatech@0756",
+        "username": "caiqian"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

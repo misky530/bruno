@@ -1,0 +1,36 @@
+meta {
+  name: Auto-generated endpoint for /api/v1/log/appOperation (DELETE)
+  type: http
+  seq: 34
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/log/appOperation
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/log/appOperation
+    method: DELETE
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}

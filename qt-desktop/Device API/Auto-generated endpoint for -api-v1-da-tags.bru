@@ -1,0 +1,36 @@
+meta {
+  name: Auto-generated endpoint for /api/v1/da/tags
+  type: http
+  seq: 51
+}
+
+post {
+  url: {{baseUrl}}/api/v1/da/tags
+  body: none
+  auth: inherit
+}
+
+example {
+  name: 200 Response
+  description: Success
+  
+  request: {
+    url: {{baseUrl}}/api/v1/da/tags
+    method: POST
+    mode: none
+  }
+  
+  response: {
+    status: {
+      code: 200
+      text: OK
+    }
+  
+    body: {
+      type: text
+      content: '''
+  
+      '''
+    }
+  }
+}
