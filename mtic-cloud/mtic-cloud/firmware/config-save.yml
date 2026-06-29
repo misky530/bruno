@@ -13,12 +13,12 @@ http:
         "description": "test1",
         "downloadUrl": "http://123",
         "forceUpdate": true,
-        "hardwareVersion": "1.0.0",
+        "hardwareVersion": "1.0.1",
         "productCode": "",
         "published": true,
         "sha256": "abc123",
         "size": 0,
-        "version": "1.0.0"
+        "version": "1.0.1"
       }
   auth: inherit
 

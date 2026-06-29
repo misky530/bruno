@@ -1,0 +1,38 @@
+info:
+  name: evaluate
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5173/api/evaluate
+  body:
+    type: json
+    data: |-
+      {
+        "context": {
+          "valve": {
+            "valveType": "定风量",
+            "valveSpec": "",
+            "valveBody": "",
+            "bodyMaterial": "",
+            "bodyLength": "",
+            "interfaceType": "",
+            "installDirection": "",
+            "insulation": "",
+            "controlFunction": "",
+            "actuator": "",
+            "powerSupply": "",
+            "pressureSensor": "",
+            "communicationPort": "",
+            "specialCode": ""
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
